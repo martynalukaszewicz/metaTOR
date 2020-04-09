@@ -16,7 +16,7 @@ BASE_PRODIGAL = (
 )
 ## HMM_URL = "http://dl.pasteur.fr/fop/LItxiFe9/hmm_databases.tgz"
 
-HMM_URL = "https://github.com/koszullab/metaTOR/blob/master/metator/data/hmm_databases.tgz?raw=true"
+## HMM_URL = "https://github.com/koszullab/metaTOR/blob/master/metator/data/hmm_databases.tgz?raw=true"
 
 
 
@@ -30,7 +30,7 @@ def download_and_install_dependencies():
     except ImportError:
         raise ValueError("Python 3.6+ is required.")
 
-    dependencies = {"hmm_databases": HMM_URL}
+    ## dependencies = {"hmm_databases": HMM_URL}
 
     if sys.platform.startswith("linux") or "bsd" in sys.platform:
 
@@ -89,9 +89,9 @@ def download_and_install_dependencies():
     with tarfile.open(louvain_path, "r:gz") as tar:
         tar.extractall()
 
-    hmm_basename = dependencies["hmm_databases"].split("/")[-1]
-    hmm_path = share_dir / hmm_basename
-    (cache_dir / hmm_basename).replace(hmm_path)
+    ## hmm_basename = dependencies["hmm_databases"].split("/")[-1]
+    ## hmm_path = share_dir / hmm_basename
+    ## (cache_dir / hmm_basename).replace(hmm_path)
 
     prodigal_basename = dependencies["prodigal"].split("/")[-1]
     prodigal_path = tools_dir / "prodigal"
