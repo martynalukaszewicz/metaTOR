@@ -87,7 +87,7 @@ function fetch_dependencies() {
 
   echo "Fetching HMMs..."
   mkdir -p "$model_dir"
-  ## wget -q $hmm_url -O "$model_dir"/hmm_databases.tgz !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  wget -q $hmm_url -O "$model_dir"/hmm_databases.tgz 
   cp /mnt/lfs2/martyna/metatordatanewgz/scop40_01Mar17/hmm_databases.tgz "$model_dir"
   tar -xzf "$model_dir"/hmm_databases.tgz -C "$model_dir"
   rm -f "$model_dir"/hmm_databases.tar.gz
