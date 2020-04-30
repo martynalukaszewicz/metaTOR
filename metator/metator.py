@@ -89,9 +89,9 @@ def download_and_install_dependencies():
     with tarfile.open(louvain_path, "r:gz") as tar:
         tar.extractall()
 
-    hmm_basename = dependencies["hmm_databases"].split("/")[-1].   !!!!!!!!!!!!!!!!!!!!!!!!!
-    hmm_path = share_dir / hmm_basename !!!!!!!
-    (cache_dir / hmm_basename).replace(hmm_path) !!!
+    hmm_basename = dependencies["hmm_databases"].split("/")[-1]
+    hmm_path = share_dir / hmm_basename 
+    (cache_dir / hmm_basename).replace(hmm_path) 
 
     prodigal_basename = dependencies["prodigal"].split("/")[-1]
     prodigal_path = tools_dir / "prodigal"
