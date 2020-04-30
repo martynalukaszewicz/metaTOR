@@ -14,9 +14,9 @@ import tarfile
 BASE_PRODIGAL = (
     "https://github.com/hyattpd/Prodigal/releases/download/v2.6.3/prodigal"
 )
-## HMM_URL = "http://dl.pasteur.fr/fop/LItxiFe9/hmm_databases.tgz". !!!!!!!!!!!!!!!!
+## HMM_URL = "http://dl.pasteur.fr/fop/LItxiFe9/hmm_databases.tgz" ## old link 
 
-## HMM_URL = "https://github.com/koszullab/metaTOR/blob/master/metator/data/hmm_databases.tgz?raw=true".  !!!!!!!!!!!!!!!!!!!
+HMM_URL = "https://github.com/koszullab/metaTOR/blob/master/metator/data/hmm_databases.tgz?raw=true" #new link as in metator.sh
 
 
 
